@@ -1,0 +1,54 @@
+# ── Database ──────────────────────────────────
+# Local SQLite database — never commit.
+# Each installation loads its own USPTO data.
+trimark_data.db
+*.db
+*.db-shm
+*.db-wal
+
+# ── USPTO bulk data files ─────────────────────
+# These can be 30MB–1GB+. Load via the app UI,
+# don't store in the repo.
+*.zip
+*.xml
+
+# ── Python ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# ── Streamlit ─────────────────────────────────
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# ── Environment / secrets ─────────────────────
+.env
+.env.local
+*.key
+secrets.json
+
+# ── OS / editor ───────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── App outputs (generated files) ─────────────
+# Clearance reports and JSON packages are
+# generated on demand — no need to track them.
+trimark_clearance_*.txt
+trimark_app_*.json
+trimark_draft*.json
